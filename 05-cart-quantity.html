@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variables</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- $ is a common convention for naming variables that represent quantities or values related to money, such as prices, costs, or totals. It can help indicate that the variable is associated with financial data.
+
+    // ${} is a syntax used in JavaScript template literals (enclosed in backticks ``) to embed expressions or variables within a string. It allows you to include dynamic values in a string without needing to concatenate them with the + operator. 
+    
+    += is a shorthand operator in JavaScript that combines addition and assignment. It allows you to add a value to an existing variable and assign the result back to that variable in a more concise way. For example, instead of writing `cartQuantity = cartQuantity + 1;`, you can simply write `cartQuantity += 1;` to achieve the same result. + adds the value to the variable, and = assigns the new value back to the variable.
+
+    ++ is a shorthand operator in JavaScript that increments a variable by 1. It is a more concise way to increase the value of a variable by one. For example, instead of writing `cartQuantity = cartQuantity + 1;`, you can simply write `cartQuantity++;` to achieve the same result. The ++ operator adds 1 to the variable and assigns the new value back to it. It is used so often that it has its own operator for convenience.
+
+    -->
+
+    <button onClick="
+    console.log(`Cart quantity: ${cartQuantity}`);
+    ">Show Quantity</button>
+
+    <button onClick="
+    cartQuantity = cartQuantity + 1;
+    console.log(`Cart quantity: ${cartQuantity}`);
+    ">Add To Cart</button>
+
+    <button onClick="
+    cartQuantity += 2;
+    console.log(`Cart quantity: ${cartQuantity}`);
+    ">+2</button>
+
+    <button onClick="
+    cartQuantity = cartQuantity + 3;
+    console.log(`Cart quantity: ${cartQuantity}`);
+    ">+3</button>
+
+    <button onClick="
+    cartQuantity = 0;
+    console.log(`Cart was reset`);
+    console.log(`Cart quantity: ${cartQuantity}`);
+    ">Reset Cart</button>
+
+    <script>
+
+        let cartQuantity = 0;
+
+    </script>
+</body>
+</html>
