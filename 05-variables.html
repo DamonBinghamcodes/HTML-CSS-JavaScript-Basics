@@ -7,6 +7,9 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <h1>Youtube Tutorial</h1>
+    <h3>JavaScript Tutorial Full Course - Beginner to Pro</h3>
+    <a href="https://www.youtube.com/watch?v=EerdGm-ehJQ">click here for tutorial</a><br><p>Currently up to lesson 6 (Booleans and if statements).</p>
     <script>
 
         // Variables are used to store data that can be used and manipulated throughout a program.
@@ -17,18 +20,20 @@
 
         // Here are some examples of variable declarations and usage:
 
+        // = is the assignment operator, which assigns a value to a variable. It takes the value on the right and assigns it to the variable on the left.
+
         let variable1 = 3;
         console.log(variable1); // Output: 3
 
-        let calculation = 2 + 2;
+        const calculation = 2 + 2;
         console.log(calculation); // Output: 4
         console.log(calculation + 2); // Output: 6
 
-        let result = calculation + 2;
+        const result = calculation + 2;
         console.log(result); // Output: 6
 
         let message = "hello";
-        console.log(message); console.log(';');// Output: "hello"
+        console.log(message); // Output: "hello"
 
         variable1 = 5; // You can reassign a new value to the variable
         console.log(variable1); // Output: 5
@@ -36,6 +41,31 @@
 
         variable1 = variable1 + 1;
         console.log(variable1); // Output: 6
+
+        message = message + " world!";
+        console.log(message); // Output: "hello world!"
+
+        const variable2 = 3;
+        // variable2 = 4; // This will cause an error because variable2 is declared as a constant and cannot be reassigned.
+
+
+        var variable3 = 3; // var is an older way to declare variables in JavaScript. It has some differences compared to let and const, such as function scope and hoisting. It is generally recommended to use let and const for better code clarity and to avoid potential issues with variable scoping.
+
+        console.log(typeof variable2); // Output: "number"
+        console.log(typeof message); // Output: "string"
+
+        const name = "Damon Bingham";
+        console.log(name);// Output: "Damon Bingham"
+        console.log(`My name is ${name}`); // Output: "My name is Damon Bingham"
+
+        const coffeePrice = 5;
+        const baglePrice = 3;
+        const soupPrice = 9;
+        let cost = coffeePrice + baglePrice * 2 + soupPrice;
+        console.log(`The total cost of food is $${cost}`); // Output: "The total cost is $20"
+        let tax = cost * 0.1;
+        console.log(`The tax on the food is $${tax}`); // Output: "The tax on the food is $2"
+        console.log(`The total cost of the food with tax is $${cost + tax}`); // Output: "The total cost of the food with tax is $22"
 
     </script>
 </body>
