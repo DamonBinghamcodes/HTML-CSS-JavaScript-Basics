@@ -32,10 +32,55 @@
       } else {
         console.log('You cannot drive yet.');
       } */
-
+/*
       console.log(false && true); // Output: true
 
       console.log(0.2  >= 0 && 0.2 < 1 / 3); // Output: true
+
+      console.log(true || false); // Output: true
+      console.log(!true); // Output
+      */
+
+       /* Truthy and Falsey values (shortcuts)
+      Falsey Values = false, 0, '', NaN, undefined, null
+      Truthy Values = any value that isnt on the falsey values */
+      
+      /*
+      if (5) {
+        console.log('truthy');
+      } 
+      
+      const cartQuantity = 1;
+
+      if (cartQuantity) {
+        console.log('cart has products');
+      }
+
+      console.log(!0);
+
+      console.log('text' / 5); //output NaN (Not a Number)
+
+      let variable1;
+      console.log(variable1); //output is undefined (variable doesnt have a value). this synta doesnt work with const
+      */
+
+
+//* SHORT CUTS FOR IF STATEMENTS ?: && || *//
+        /*Ternary Operator*/
+      const result = 0 ? 'truthy' : 'falsy';
+      console.log(result);
+
+      /*Gaurd Operator &&*/
+      false && console.log('hello');
+
+      const message = 5 && 'hello';
+      console.log(message);
+
+      /*|| or operator (default operator*/
+      const currency = undefined || 'USD';
+      console.log(currency);
+
+
     </script>
 </body>
 </html>
