@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functions</title>
+</head>
+<body>
+    <!-- A Function lets us re-use code -->
+     <!-- We create a function which holds our code and then we call the function by the name we gave it to run the code -->
+
+    <script>
+        /*
+        function function1() {
+            console.log('Hello');
+            console.log(2 + 2);
+        }
+
+        function1(); // runs the above function
+        function1(); // we can run it as many times as we like
+        */
+
+        //Parameters - opposite to a return statement. its puts a value into a function.
+
+        function calculateTax(cost, taxPercent = 0.1) {
+            console.log(cost * taxPercent);
+        }
+
+        calculateTax(2000, 0.2);
+        calculateTax(5000);
+    </script>
+</body>
+</html>
